@@ -15,9 +15,9 @@ const BikeForm = () => {
   return (
     <>
       {isFetchingData ? (
-        <div>we are fetching data</div> 
+        <div className="message">**We are fetching data**</div> 
       ) : (
-        <button onClick={() => dispatch(getData())}>get data</button>
+        <button onClick={() => dispatch(getData())}>Get Data</button>
       )}
     </>
   );
