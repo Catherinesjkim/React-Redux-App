@@ -18,18 +18,19 @@ function App() {
     <Provider store={store}>
       <div className="App">
         <h1>City Bikes in the World!</h1>
-        <a href="https://www.freepik.com/free-photos-vectors/watercolor">Paris Mon Amour</a>
-        <img src={IMG} alt="img" />
-        <BikeForm />
-        <BikesList />
+        <a href="https://www.freepik.com/free-photos-vectors/watercolor">
+          Paris Mon Amour
+        </a>
+        <div>
+          <BikeForm />
+          <div className="imgDiv">
+            <img src={IMG} alt="img" />
+          </div>
+          <BikesList />
+        </div>
       </div>
     </Provider>
   );
 }
-
-/* <Image publicId="family_bench.jpg">
-  <Transformation width="250" height="250" gravity="faces" crop="fill" />
-</Image>; */
-
 
 export default App;

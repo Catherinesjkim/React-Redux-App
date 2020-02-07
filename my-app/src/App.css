@@ -23,6 +23,26 @@ div.message {
   font-weight: bold;
 }
 
-img {
-  
+.imgDiv {
+  width: 75%;
+  margin: 0 auto;
 }
+
+img {
+  width: 100%;
+}
+
+ol {
+  list-style-type: georgian;
+}
+
+.station {
+  font-size: 30px;
+}
+
+button {
+  font-size: 20px;
+  border-radius: 100%;
+  margin: 1%;
+}
+
