@@ -1,26 +1,26 @@
 import React from 'react';
-import { connect } from 'react-redux';
+
+// Hooks for redux vs. maps/props
+import { useSelector, useDispatch } from 'react-redux';
+
+import { getData } from '../actions';
 
 // rest state for get data
-const BikeForm = props => {
+const BikeForm = () => {
+
+  const isFetchingData = useSelector(state => state.isFetchingData);
+
+  const dispatch =  useDispatch();
+
   return (
     <>
-      {props.isFetchingData ? (
+      {isFetchingData ? (
         <div>we are fetching data</div> 
       ) : (
-          <button>get data</button>
+        <button onClick={() => dispatch(getData())}>get data</button>
       )}
     </>
   );
 };
 
-const mapStateToProps = state => {
-  return {
-    isFetchingData: state.isFetchingData
-  };
-};
-
-export default connect(
-  mapStateToProps, 
-  {}
-)(BikeForm);
+export default BikeForm;

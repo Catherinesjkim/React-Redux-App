@@ -1,4 +1,4 @@
-import { GET_DATA } from '../actions';
+import { GET_DATA, UPDATE_BIKES } from '../actions';
 
 const initialState = {
   bikes: [],
@@ -11,6 +11,11 @@ export const bikesReducer = (state = initialState, action) => {
       return {
         ...state, 
         isFetchingData: true
+      };
+    case UPDATE_BIKES:
+      return {
+        ...state,
+        bikes: action.payload
       };
     default: 
       return state; 
