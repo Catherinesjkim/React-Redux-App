@@ -18,7 +18,7 @@ function App() {
     <Provider store={store}>
       <div className="App">
         <h1>City Bikes in the World!</h1>
-        <a href="https://www.freepik.com/free-photos-vectors/watercolor">
+        <a href="http://www.freepik.com/free-photos-vectors/watercolor">
           Paris Mon Amour
         </a>
         <div>
