@@ -12,7 +12,7 @@ const BikesList = () => {
         <div className="error">{error}</div>
       ) : (
       bikes.map(bike => (
-        <ol>
+        <ol> 
           <li className="station"><strong>{bike.name}</strong></li>
           <li>{bike.location.city}</li>
           <li>{bike.location.country}</li>
